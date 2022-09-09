@@ -1,8 +1,7 @@
 import "./index.css";
 import { Header } from "../Header";
+import { NotificationButton } from "../NotificationButton";
 import DatePicker from "react-datepicker";
-import vector from "../../assets/Vector.svg";
-
 import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
 
@@ -55,11 +54,7 @@ export function Container() {
                   <td className="show992">11</td>
                   <td>R$ 55300.00</td>
                   <td>
-                    <div className="dsmeta-red-btn-container">
-                      <div className="dsmeta-red-btn">
-                        <img src={vector} alt="Notificar" />
-                      </div>
-                    </div>
+                    <NotificationButton />
                   </td>
                 </tr>
                 <tr>
@@ -70,11 +65,7 @@ export function Container() {
                   <td className="show992">11</td>
                   <td>R$ 55300.00</td>
                   <td>
-                    <div className="dsmeta-red-btn-container">
-                      <div className="dsmeta-red-btn">
-                        <img src={vector} alt="Notificar" />
-                      </div>
-                    </div>
+                    <NotificationButton />
                   </td>
                 </tr>
                 <tr>
@@ -85,11 +76,7 @@ export function Container() {
                   <td className="show992">11</td>
                   <td>R$ 55300.00</td>
                   <td>
-                    <div className="dsmeta-red-btn-container">
-                      <div className="dsmeta-red-btn">
-                        <img src={vector} alt="Notificar" />
-                      </div>
-                    </div>
+                    <NotificationButton />
                   </td>
                 </tr>
                 <tr>
@@ -100,11 +87,7 @@ export function Container() {
                   <td className="show992">11</td>
                   <td>R$ 55300.00</td>
                   <td>
-                    <div className="dsmeta-red-btn-container">
-                      <div className="dsmeta-red-btn">
-                        <img src={vector} alt="Notificar" />
-                      </div>
-                    </div>
+                    <NotificationButton />
                   </td>
                 </tr>
                 <tr>
@@ -115,11 +98,7 @@ export function Container() {
                   <td className="show992">11</td>
                   <td>R$ 55300.00</td>
                   <td>
-                    <div className="dsmeta-red-btn-container">
-                      <div className="dsmeta-red-btn">
-                        <img src={vector} alt="Notificar" />
-                      </div>
-                    </div>
+                    <NotificationButton />
                   </td>
                 </tr>
               </tbody>
