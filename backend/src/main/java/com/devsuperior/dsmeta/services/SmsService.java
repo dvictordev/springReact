@@ -20,7 +20,7 @@ public class SmsService {
     @Value("${twilio.key}")
     private String twilioKey;
 
-    @Value("${twilio.phone.from")
+    @Value("${twilio.phone.from}")
     private String twilioPhoneFrom;
 
     @Value("${twilio.phone.to}")
