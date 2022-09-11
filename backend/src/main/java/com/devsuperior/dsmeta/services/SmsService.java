@@ -20,7 +20,7 @@ public class SmsService {
     @Value("${twilio.key}")
     private String twilioKey;
 
-    @Value("${twilio.phone.from}")
+    @Value("${twilio.phone.from")
     private String twilioPhoneFrom;
 
     @Value("${twilio.phone.to}")
@@ -29,14 +29,20 @@ public class SmsService {
     @Autowired
     private SaleRepository saleRepository;
 
-    public void sendSms( ) {
+    public void sendSms(Long saleId) {
+
+        Sale sale = saleRepository.findById(saleId).get();
+
+        String msg = "o vendedor " + sale.getSellerName() + " foi destaque em " + sale.getDate() + " tendo um total de "
+                +
+                sale.getDeals() + " vendas, com o valor de R$" + sale.getAmount();
 
         Twilio.init(twilioSid, twilioKey);
 
         PhoneNumber to = new PhoneNumber(twilioPhoneTo);
         PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
 
-        Message message = Message.creator(to, from, "teste").create();
+        Message message = Message.creator(to, from, msg).create();
 
         System.out.println(message.getSid());
     }
