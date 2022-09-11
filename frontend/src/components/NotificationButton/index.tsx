@@ -1,9 +1,20 @@
 import vector from '../../assets/vector.svg'
-import './inde'
+import './index.css'
+import axios from 'axios'
 
-export function NotificationButton() {
+
+type Props = {
+  saleId: number;
+}
+
+function handleClick(id: number){
+  axios.get(`http://localhost:8080/sales/${id}/notification`);
+  console.log('enviado')
+}
+
+export function NotificationButton({saleId} : Props) {
   return (
-      <div className="dsmeta-red-btn-container">
+      <div onClick={()=> handleClick(saleId)} className="dsmeta-red-btn-container">
         <div className="dsmeta-red-btn">
           <img src={vector} alt="Notificar" />
         </div>
