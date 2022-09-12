@@ -1,4 +1,4 @@
-import vector from '../../assets/vector.svg'
+import vector from '../../../public/assets/vector.svg'
 import './index.css'
 import axios from 'axios'
 import {toast } from 'react-toastify'
