@@ -1,5 +1,5 @@
 import { Container } from "./components/Container";
-import "./app.css";
+import "./App.css";
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
