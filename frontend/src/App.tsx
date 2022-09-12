@@ -1,10 +1,14 @@
 import { Container } from "./components/Container";
 import "./app.css";
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
     <main className="main">
-      <Container />
+      <ToastContainer />
+        <Container />
     </main>
   );
 }

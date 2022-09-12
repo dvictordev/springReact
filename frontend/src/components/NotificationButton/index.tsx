@@ -1,6 +1,7 @@
 import vector from '../../assets/vector.svg'
 import './index.css'
 import axios from 'axios'
+import {toast } from 'react-toastify'
 
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
 
 function handleClick(id: number){
   axios.get(`http://localhost:8080/sales/${id}/notification`);
-  console.log('enviado')
+  toast.info('SMS enviado com sucesso!')
 }
 
 export function NotificationButton({saleId} : Props) {
